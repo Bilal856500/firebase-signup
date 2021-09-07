@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 20, 20);
+}
+
+form {
+    width: 400px;
+    border: solid 1px #a71414;
+    padding: 5rem;
+    color: blanchedalmond;
+    margin-top: 20px;
+}
+
+
+/* form[label] {
+    text-decoration-color: rgb(15, 224, 207);
+    color: blue;
+} */
+
+button {
+    margin-top: 2rem;
+}

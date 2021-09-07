@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase Realtime Database - Client Side</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <form id="form">
+            <label for="userId">User Name</label><br>
+            <input type="text" name="userId" id="username" required><br>
+            <label for="firstName">First Name</label><br>
+            <input type="text" name="firstName" id="firstName" required><br>
+            <label for="lastName">Last Name</label><br>
+            <input type="text" name="lastName" id="lastName"><br>
+            <label>Password</label><br>
+            <input type="password" name="password" id="Password" required><br>
+            <label>Confirm Password</label><br>
+            <input type="password" name="password" id="ConfirmPassword" required><br>
+            <button id="writeData()" type="submit" class="btn waves-effect waves-light">Sign In</button>
+
+        </form>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyByvslMJy_NQhPWaUPcBPfd7iIaQHV0Lec",
+            authDomain: "abcs-3f8f9.firebaseapp.com",
+            projectId: "abcs-3f8f9",
+            storageBucket: "abcs-3f8f9.appspot.com",
+            messagingSenderId: "313659080163",
+            appId: "1:313659080163:web:f37a3328855a11801d74d6",
+            measurementId: "G-ZZYWZ9GMNZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="functions.js"></script>
+
+</body>
+
+</html>
